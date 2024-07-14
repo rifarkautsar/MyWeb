@@ -1,0 +1,244 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Tienne", serif;
+  font-weight: 400;
+ scroll-behavior: smooth;
+}
+
+.nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(10, 40, 56, 0.822);
+    padding: 15px 60px;  
+    justify-content: right;
+    z-index: 10;
+    
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+    margin-left: 8px;
+    padding: 2px;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 5px 15px;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.nav ul li a:hover{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+.nav ul li a:active{
+background-color: gray;
+}
+
+.hero{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#landing{
+    position: relative;
+    height: 100vh;
+}
+#landing a i{
+    display: flex;
+    position: fixed;
+    transform: scale(1.9) rotate(180deg);
+    text-align: center; 
+    color: white;
+    top: 18px;
+    left: 30px;
+    z-index: 10;
+}
+#landing::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #192941, transparent);
+    z-index: 6;
+}
+#landing h1{
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    bottom: 17%;
+    left: 180px;
+    color: white;
+    font-size: 120px;text-align: center;
+}
+#about{
+    padding: 50px ;
+    line-height: 25px ;
+    color: white;
+    background-color: #192941;
+}
+.img1{
+    z-index: 1;
+}
+.img2{
+    z-index: 3;
+}
+.focus{
+    z-index: 4;
+}
+.bulan{
+    z-index: 2;
+    transform: scale(0.8);
+}
+.meteor1{
+    z-index: 3;
+    transform: translate(-300px, -100px) scale(0.7) rotate(-10deg);
+}
+.meteor2{
+    z-index: 3;
+    transform: translate(300px, -50px) scale(0.4) rotate(-120deg);
+}
+.kabut1{
+    z-index: 5;
+    transform: translate(280px,250px) scale(0.8, 0.4) ;
+    opacity: 0.4;
+}
+.kabut2{
+    z-index: 5;
+    transform: translate(-250px,300px) scale(0.8, 0.4);
+    opacity: 0.4;
+}
+.content{
+    position: relative;
+    text-align: center;
+    width: 80%;
+    margin:0 auto;
+}
+.content hr{
+    width: 30%;
+    border: 1px solid white;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.content p{
+    text-align: justify;
+    text-indent: 100px;
+}
+.content img{
+    display: block;
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+#portofolio{
+    padding: 50px ;
+    line-height: 25px ;
+    color: white;
+    background-color: #192941;
+}
+.box1{
+    display: flex;
+    position: relative; 
+    left: 23%;
+    margin-bottom: 50px;
+    padding: 15px;
+    width: 530px;
+    height: auto;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.box2{
+    display: flex;
+    position: relative; 
+    left: 23%;
+    margin-bottom: 50px;
+    padding: 15px;
+    width: 530px;
+    height: auto;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.box3{
+    display: flex;
+    position: relative; 
+    left: 23%;
+    margin-bottom: 50px;
+    padding: 15px;
+    width: 530px;
+    height: auto;
+    object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.box1 img{
+    width: 500px;
+}
+.box2 img{
+    width: 500px;
+}
+.box3 img{
+    width: 500px;
+}
+
+#contact{
+    padding: 50px ;
+    line-height: 25px ;
+    color: white;
+    background-color: #192941;
+}
+
+.login{
+	position: relative;
+	display: block;
+    background-color: whitesmoke;
+	padding: 12px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    border-radius: 10px;
+	text-decoration: none;
+    width: 40%;
+    left: 30%;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+.login:hover {
+	transition: 1s;
+	color: #ffffff;
+	background: #2196f3;
+	box-shadow: 0 0 8px #2196f3,
+				0 0 50px #2196f3,
+				0 0 500px #2196f3;
+}
+.content i{
+    display: block;
+    position: relative;
+    margin-left: 20px;
+    transform: translateX(-100px);
+    color: rgb(13, 158, 13);
+    font-size: 40px;
+}
+.wa{
+    position: absolute;
+    transform: translate(-50px, -32px);
+    font-size: 25px;
+    color: white;
+}
